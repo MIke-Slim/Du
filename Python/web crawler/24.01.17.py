@@ -9,3 +9,4 @@ soup=BeautifulSoup(titles.text,'html.parser')
 titless=soup.findAll('h2',attr={'class':'title'})
 for i in titless:
     print(i.string)
+print(titles.encoding)
